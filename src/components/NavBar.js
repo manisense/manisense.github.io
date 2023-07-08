@@ -50,9 +50,10 @@ const NavBar = () => {
             >
                 <FaTwitterSquare className='h-7 w-7'/>
             </motion.a>
-            <motion.a href='/' 
+            <motion.a href='https://www.buymeacoffee.com/manisense' 
                 whileHover={{y:-2,}}
                 whileTap={{scale:0.9}}
+                target='_blank'
             >
                 <BiCoffeeTogo className='h-7 w-7'/>
             </motion.a>
