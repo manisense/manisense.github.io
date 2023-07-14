@@ -22,12 +22,12 @@ const CustiomLink = ({href, title, className=""}) => {
 
 const NavBar = () => {
   return (
-    <header className='w-full px-20 py-8 font-medium flex items-center justify-between'>
+    <header className='w-full fixed z-10 px-16 py-4 font-medium flex items-center justify-between bg-opacity-95 backdrop-blur '>
         <nav className='flex-1 space-x-5'>
             <CustiomLink href='/' title='Home'/>
             <CustiomLink href='/about' title='About'/>
-            <CustiomLink href='/project' title='Project'/>
-            <CustiomLink href='/journal' title='Journal'/>
+            <CustiomLink href='/projects' title='Projects'/>
+            <CustiomLink href='/journals' title='Journals'/>
   
         </nav>
         <Logo className='flex-1'/>
