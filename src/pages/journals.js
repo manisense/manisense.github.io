@@ -1,9 +1,10 @@
+import ArticleList from '@/components/ArticleList'
 import React from 'react'
 
 const journals = () => {
   return (
     <div>
-      Journals is here
+      <ArticleList />
     </div>
   )
 }

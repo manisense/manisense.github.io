@@ -6,12 +6,14 @@ import Animated from "@/components/Animated";
 import Link from "next/link";
 import Pricing from "@/components/Pricing";
 import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 const about = () => {
   return (
     <>
       <main className="h-full">
         <Skills />
         <Pricing />
+        <Contact />
       </main>
     </>
   );

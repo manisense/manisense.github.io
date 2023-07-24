@@ -22,8 +22,8 @@ const CustiomLink = ({href, title, className=""}) => {
 
 const NavBar = () => {
   return (
-    <header className='w-full fixed z-10 px-16 py-4 font-medium flex items-center justify-between bg-opacity-95 backdrop-blur '>
-        <nav className='flex-1 space-x-5'>
+    <header className='w-full fixed z-10 px-16 py-4 font-medium flex items-center justify-center bg-opacity-95 backdrop-blur '>
+        <nav className='flex-1  sm:space-x-3 lg:space-x-6 !visible hidden md:!flex'>
             <CustiomLink href='/' title='Home'/>
             <CustiomLink href='/about' title='About'/>
             <CustiomLink href='/projects' title='Projects'/>
@@ -31,20 +31,20 @@ const NavBar = () => {
   
         </nav>
         <Logo className='flex-1'/>
-        <nav className='flex  flex-1 w-full justify-end space-x-6'>
-            <motion.a href='/' 
+        <nav className='!visible hidden md:!flex flex-1 w-full justify-end sm:space-x-3 lg:space-x-6'>
+            <motion.a href='https://github.com/manisense' 
                 whileHover={{y:-2,}}
                 whileTap={{scale:0.9}}
             >
                 <FaGithubSquare className='h-7 w-7'/>
             </motion.a>
-            <motion.a href='/' 
+            <motion.a href='https://www.linkedin.com/in/muneshmeena/' 
                 whileHover={{y:-2,}}
                 whileTap={{scale:0.9}}
             >
                 <FaLinkedin className='h-7 w-7' />
             </motion.a>
-            <motion.a href='/' 
+            <motion.a href='https://twitter.com/manishdeux' 
                 whileHover={{y:-2,}}
                 whileTap={{scale:0.9}}
             >

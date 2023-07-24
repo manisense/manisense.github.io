@@ -8,7 +8,6 @@ const Skills = () => {
 
     <div className="container my-24 mx-auto px-8">
 
-
       <section className="mb-32 text-center">
       <h2 class=" text-center text-black text-4xl font-bold">Services</h2>
         <div className="py-12 md:px-12">

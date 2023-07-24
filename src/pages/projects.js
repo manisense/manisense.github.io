@@ -1,9 +1,10 @@
+import ProjectList from '@/components/ProjectList'
 import React from 'react'
 
 const projects = () => {
   return (
     <div>
-      Projects
+      <ProjectList />
     </div>
   )
 }
