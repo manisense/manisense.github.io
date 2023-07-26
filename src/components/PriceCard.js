@@ -2,7 +2,6 @@ import React from "react";
 import PriceLine from "./PriceLine";
 import { motion } from "framer-motion";
 
-
 const PriceCard = (
 {  title,
   price,
