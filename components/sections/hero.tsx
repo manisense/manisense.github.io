@@ -63,11 +63,11 @@ export function HeroSection() {
             />
             <TypeAnimation
               sequence={[
-                'Web Developer',
+                'Learner',
                 2000,
                 'Programmer',
                 2000,
-                'Designer',
+                'Developer',
                 2000,
               ]}
               wrapper="span"
@@ -87,10 +87,10 @@ export function HeroSection() {
                 whileHover={{ x: "0%" }}
                 transition={{ duration: 0.3 }}
               />
-              <span className="relative">
+              
                 <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                 Hire Me
-              </span>
+              
             </Button>
             <Button 
               size="lg" 
@@ -103,10 +103,10 @@ export function HeroSection() {
                 whileHover={{ x: "0%" }}
                 transition={{ duration: 0.3 }}
               />
-              <span className="relative">
+            
                 <Download className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
                 Download Resume
-              </span>
+             
             </Button>
           </div>
 

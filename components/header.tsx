@@ -12,25 +12,26 @@ export function Header() {
   
   const backgroundColor = useTransform(
     scrollY,
-    [0, 100],
+    [1, 30, 100],
     [
-      "rgba(var(--background-rgb), 0)",
-      "rgba(var(--background-rgb), 0.9)"
+      "rgba(var(--background-rgb), 0.3)",
+      "rgba(var(--background-rgb), 0.6)",
+      "rgba(var(--background-rgb), 0.9)",
     ]
   )
   
   const textColor = useTransform(
     scrollY,
-    [0, 100],
+    [1, 100],
     [
       "rgb(var(--foreground-rgb))",
-      theme === 'dark' ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)"
+      theme === 'dark' ? "rgb(255, 255, 255)" : "rgb(10, 110, 30)"
     ]
   )
   
   const backdropBlur = useTransform(
     scrollY,
-    [0, 100],
+    [1, 100],
     ["blur(0px)", "blur(8px)"]
   )
 
@@ -51,16 +52,16 @@ export function Header() {
     >
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0.1, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="text-xl font-bold"
           style={{ color: textColor }}
         >
-          Portfolio
+          Manish
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0.1, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="hidden md:flex items-center space-x-8"

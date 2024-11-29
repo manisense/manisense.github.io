@@ -7,10 +7,10 @@ import { Brain, Code, Palette, Sparkles } from 'lucide-react'
 import { Card3D } from '@/components/3d-card'
 
 const skills = [
-  { name: 'Frontend', icon: Palette, items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { name: 'Backend', icon: Code, items: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL'] },
+  { name: 'Frontend', icon: Palette, items: ['React', 'React Native','Next.js', 'TypeScript', 'Tailwind CSS'] },
+  { name: 'Backend', icon: Code, items: ['Node.js',  'Express', 'Flask', 'MongoDB', 'PostgreSQL'] },
   { name: 'Tools', icon: Brain, items: ['Git', 'Docker', 'AWS', 'Figma'] },
-  { name: 'Soft Skills', icon: Sparkles, items: ['Team Leadership', 'Communication', 'Problem Solving', 'Agile'] }
+  { name: 'Soft Skills', icon: Sparkles, items: ['Team Leadership', 'Communication', 'Problem Solving', ] }
 ]
 
 const container = {

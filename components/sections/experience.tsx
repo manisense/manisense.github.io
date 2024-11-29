@@ -12,27 +12,37 @@ import {
 
 const experiences = [
   {
-    title: "Software Engineering Intern",
-    company: "Tech Innovators Inc.",
-    period: "Jun 2023 - Present",
-    type: "Internship",
-    description: "Developing scalable web applications using Next.js and TypeScript. Implemented real-time features and optimized performance.",
-    skills: ["React", "Node.js", "AWS"],
-    icon: Briefcase
-  },
-  {
     title: "MTech in Computer Science",
-    company: "Premier Institute of Technology",
-    period: "2023 - Present",
+    company: "IIT Guwahati",
+    period: "2024 - Present",
     type: "Education",
     description: "Specializing in Web Technologies and Distributed Systems. Research focus on scalable architecture patterns.",
     skills: ["Algorithms", "System Design", "Research"],
     icon: GraduationCap
   },
   {
+    title: "Full Stack Developer",
+    company: "Sterlite Power.",
+    period: "July 2023 - Jan 2024",
+    type: "Full Time",
+    description: "Developed scalable web applications using React.js, TypeScript and Flask. Implemented real-time features and optimized performance.",
+    skills: ["React", "Node.js", "AWS", "Flask", "PostgreSQL"],
+    icon: Briefcase
+  },
+
+  {
+    title: "Embedded Software Developer",
+    company: "Zilogic Systems",
+    period: "May 2022 - July 2022",
+    type: "Internship",
+    description: "Worked on React Native and BLE Project.",
+    skills: ["React Native", "BLE", "Medical Device"],
+    icon: Briefcase
+  },
+  {
     title: "Freelance Developer",
     company: "Self-Employed",
-    period: "2021 - 2023",
+    period: "2021 - Current",
     type: "Freelance",
     description: "Delivered custom web solutions for various clients. Managed project timelines and client communications.",
     skills: ["Web Development", "UI/UX", "Project Management"],

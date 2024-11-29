@@ -8,8 +8,8 @@ import { GradientBackground } from '@/components/gradient-background'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Portfolio - MTech Student',
-  description: 'Web Developer, Programmer, Designer',
+  title: 'Manish Meena',
+  description: 'Learner, Programmer, Developer ',
 }
 
 export default function RootLayout({

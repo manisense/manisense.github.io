@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import {
   Github,
+  Link,
   Linkedin,
   Mail,
   MessageSquare,
@@ -48,7 +49,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">contact@example.com</p>
+                    <p className="font-medium">imanishmeenaa@gmail.com</p>
                   </div>
                 </div>
 
@@ -58,7 +59,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+1 234 567 890</p>
+                    <p className="font-medium">Mail plssss</p>
                   </div>
                 </div>
 
@@ -69,12 +70,14 @@ export function ContactSection() {
                   <div>
                     <p className="text-sm text-muted-foreground">Social</p>
                     <div className="flex gap-2 mt-1">
-                      <Button variant="ghost" size="icon" className="rounded-full">
+                      <a href='https://github.com/manisense' target="_blank" rel="noopener noreferrer"><Button variant="ghost" size="icon" className="rounded-full">
                         <Github className="w-5 h-5" />
-                      </Button>
+                      </Button></a>
+                      <a href='https://www.linkedin.com/in/muneshmeena/' target="_blank" rel="noopener noreferrer">
                       <Button variant="ghost" size="icon" className="rounded-full">
                         <Linkedin className="w-5 h-5" />
                       </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
