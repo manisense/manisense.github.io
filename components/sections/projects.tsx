@@ -10,28 +10,28 @@ import { Card3D } from '@/components/3d-card'
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-    tags: ["Next.js", "TypeScript", "Prisma", "Stripe"],
-    github: "#",
-    demo: "#"
+    title: "Medikle App",
+    description: "A mobile app for medicine identification, medicine reminder and medical records",
+    image: "/images/medikle-app.png",
+    tags: ["React Native", "TypeScript", "Expo", "Firebase"],
+    github: "https://github.com/manisense/medikle-app",
+    demo: "https://medikle.com"
   },
   {
-    title: "AI Chat Application",
-    description: "Real-time chat application with AI-powered responses",
-    image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=800&q=80",
-    tags: ["React", "Node.js", "Socket.io", "OpenAI"],
-    github: "#",
-    demo: "#"
+    title: "OnlineDaku",
+    description: "An e-commerce platform for cheap deals",
+    image: "/images/onlinedaku.png",
+    tags: [ "Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/manisense/onlinedaku",
+    demo: "https://onlinedaku.live"
   },
   {
-    title: "Portfolio Website",
-    description: "Modern portfolio website with 3D animations",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    tags: ["Next.js", "Three.js", "Tailwind CSS"],
-    github: "#",
-    demo: "#"
+    title: "SSC Decode",
+    description: "An Educational Platform for SSC Students",
+    image: "/images/sscdecode.png",
+    tags: [ "Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/manisense/sscdecode",
+    demo: "https://sscdecode.com"
   }
 ]
 
@@ -129,7 +129,7 @@ export function ProjectsSection() {
                         {projects[activeIndex].description}
                       </p>
                       <div className="flex gap-3">
-                        <Button className="relative overflow-hidden group">
+                        <Button className="relative overflow-hidden group" onClick={() => window.open(projects[activeIndex].github, "_blank")}>
                           <motion.div
                             className="absolute inset-0 bg-primary opacity-20"
                             animate={{
@@ -139,7 +139,7 @@ export function ProjectsSection() {
                           <Github className="mr-2 h-4 w-4" />
                           View Code
                         </Button>
-                        <Button variant="secondary" className="relative overflow-hidden group">
+                        <Button variant="secondary" className="relative overflow-hidden group" onClick={() => window.open(projects[activeIndex].demo, "_blank")}>
                           <motion.div
                             className="absolute inset-0 bg-secondary opacity-20"
                             animate={{
