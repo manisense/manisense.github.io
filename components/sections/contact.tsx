@@ -52,16 +52,16 @@ export function ContactSection() {
                     <p className="font-medium">imanishmeenaa@gmail.com</p>
                   </div>
                 </div>
-
+{/* 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">Mail plssss</p>
+                    <p className="font-medium">Mail Please!!!</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

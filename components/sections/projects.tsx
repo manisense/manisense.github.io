@@ -13,7 +13,7 @@ const projects = [
     title: "Medikle App",
     description: "A mobile app for medicine identification, medicine reminder and medical records",
     image: "/images/medikle-app.png",
-    tags: ["React Native", "TypeScript", "Expo", "Firebase"],
+    tags: ["React Native", "TypeScript", "Expo", "Supabase", "Generative AI"],
     github: "https://github.com/manisense/medikle-app",
     demo: "https://medikle.com"
   },
@@ -32,7 +32,15 @@ const projects = [
     tags: [ "Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/manisense/sscdecode",
     demo: "https://sscdecode.com"
-  }
+  },
+  {
+    title: "Tech Agency",
+    description: "A Tech Agency Website",
+    image: "/images/techagency.png",
+    tags: [ "Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/manisense/manisense.tech",
+    demo: "https://manisense.tech"
+  },
 ]
 
 export function ProjectsSection() {
