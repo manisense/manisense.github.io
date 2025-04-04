@@ -23,7 +23,7 @@ const projects = [
     image: "/images/onlinedaku.png",
     tags: [ "Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/manisense/onlinedaku",
-    demo: "https://onlinedaku.live"
+    demo: "https://onlinedaku.com"
   },
   {
     title: "SSC Decode",
