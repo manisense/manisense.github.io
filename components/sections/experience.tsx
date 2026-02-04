@@ -16,7 +16,11 @@ const experiences = [
     company: "IIT Guwahati",
     period: "2024 - Present",
     type: "Education",
-    description: "Specializing in Web Technologies and Distributed Systems. Research focus on scalable architecture patterns.",
+    description: "Specializing in web technologies and distributed systems with a focus on scalable architecture patterns.",
+    highlights: [
+      "Research-driven approach to system design.",
+      "Deepening expertise in distributed computing.",
+    ],
     skills: ["Algorithms", "System Design", "Research"],
     icon: GraduationCap
   },
@@ -25,7 +29,11 @@ const experiences = [
     company: "Sterlite Power.",
     period: "July 2023 - Jan 2024",
     type: "Full Time",
-    description: "Developed scalable web applications using React.js, TypeScript and Flask. Implemented real-time features and optimized performance.",
+    description: "Built scalable web applications using React, TypeScript, and Flask with performance-first engineering.",
+    highlights: [
+      "Implemented real-time functionality and data-driven interfaces.",
+      "Improved application performance and reliability.",
+    ],
     skills: ["React", "Node.js", "AWS", "Flask", "PostgreSQL"],
     icon: Briefcase
   },
@@ -35,7 +43,11 @@ const experiences = [
     company: "Zilogic Systems",
     period: "May 2022 - July 2022",
     type: "Internship",
-    description: "Worked on React Native and BLE Project.",
+    description: "Contributed to a React Native and BLE prototype for connected devices.",
+    highlights: [
+      "Built mobile interfaces for hardware workflows.",
+      "Collaborated on BLE integrations and testing.",
+    ],
     skills: ["React Native", "BLE", "Medical Device"],
     icon: Briefcase
   },
@@ -44,7 +56,11 @@ const experiences = [
     company: "Self-Employed",
     period: "2021 - Current",
     type: "Freelance",
-    description: "Delivered custom web solutions for various clients. Managed project timelines and client communications.",
+    description: "Delivered custom web solutions for clients across education and commerce.",
+    highlights: [
+      "Led discovery, design handoff, and development cycles.",
+      "Built maintainable, reusable UI systems.",
+    ],
     skills: ["Web Development", "UI/UX", "Project Management"],
     icon: Building2
   }
@@ -60,9 +76,9 @@ export function ExperienceSection() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Experience</h2>
           <p className="text-muted-foreground">
-            My professional journey and educational background
+            A journey through education, product delivery, and hands-on engineering.
           </p>
         </motion.div>
 
@@ -88,16 +104,23 @@ export function ExperienceSection() {
                 <exp.icon className="w-6 h-6 text-primary" />
               </div>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 gradient-border bg-background/70 backdrop-blur hover:shadow-lg transition-shadow">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                   <Calendar className="w-4 h-4" />
                   <span>{exp.period}</span>
+                  <Badge variant="secondary" className="ml-2">{exp.type}</Badge>
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
                 <p className="text-muted-foreground mb-4">{exp.company}</p>
                 
                 <p className="mb-4">{exp.description}</p>
+
+                <ul className="mb-4 space-y-2 text-sm text-muted-foreground">
+                  {exp.highlights.map((item) => (
+                    <li key={item}>• {item}</li>
+                  ))}
+                </ul>
 
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill) => (

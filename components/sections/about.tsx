@@ -7,10 +7,28 @@ import { Brain, Code, Palette, Sparkles } from 'lucide-react'
 import { Card3D } from '@/components/3d-card'
 
 const skills = [
-  { name: 'Frontend', icon: Palette, items: ['React', 'React Native','Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { name: 'Backend', icon: Code, items: ['Node.js',  'Express', 'Flask', 'MongoDB', 'PostgreSQL'] },
-  { name: 'Tools', icon: Brain, items: ['Git', 'Docker', 'AWS', 'Figma'] },
-  { name: 'Soft Skills', icon: Sparkles, items: ['Team Leadership', 'Communication', 'Problem Solving', ] }
+  { name: 'Frontend', icon: Palette, items: ['React', 'Next.js', 'React Native', 'TypeScript', 'Tailwind CSS'] },
+  { name: 'Backend', icon: Code, items: ['Node.js', 'Flask', 'PostgreSQL', 'MongoDB', 'Supabase'] },
+  { name: 'Tools', icon: Brain, items: ['Git', 'Docker', 'AWS', 'Vercel'] },
+  { name: 'Collaboration', icon: Sparkles, items: ['Product Thinking', 'Mentoring', 'Communication', 'Problem Solving'] }
+]
+
+const principles = [
+  {
+    title: 'Product Thinking',
+    description: 'Translate goals into roadmaps that balance user value, feasibility, and craft.',
+    icon: Sparkles,
+  },
+  {
+    title: 'Design + Engineering',
+    description: 'Build UI systems that are elegant, reusable, and easy to scale.',
+    icon: Palette,
+  },
+  {
+    title: 'Systems & Scale',
+    description: 'Choose architectures that keep products fast, reliable, and future-ready.',
+    icon: Brain,
+  },
 ]
 
 const container = {
@@ -36,13 +54,39 @@ export function AboutSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto text-center mb-12"
+          className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">About Me</h2>
-          <p className="text-muted-foreground">
-            MTech student passionate about creating beautiful and functional web experiences.
-            Always learning and exploring new technologies to build better solutions.
-          </p>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">About</h2>
+            <p className="text-muted-foreground text-lg">
+              I’m a senior full-stack developer focused on building delightful product
+              experiences—from early discovery and UX flows to production-grade systems.
+              I enjoy collaborating with teams that value clarity, craft, and long-term quality.
+            </p>
+            <div className="mt-6 space-y-3 text-sm text-muted-foreground">
+              <p>• Product strategy, design systems, and UX engineering.</p>
+              <p>• Full-stack execution with modern web and mobile stacks.</p>
+              <p>• Performance, accessibility, and scalable architectures.</p>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            {principles.map((item) => (
+              <Card3D key={item.title}>
+                <Card className="p-5 gradient-border bg-background/70 backdrop-blur">
+                  <div className="flex items-start gap-3">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </div>
+                  </div>
+                </Card>
+              </Card3D>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div

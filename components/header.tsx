@@ -37,14 +37,14 @@ export function Header() {
 
   const navItems = [
     { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'Work', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
   ]
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-border/40"
       style={{
         backgroundColor,
         backdropFilter: backdropBlur,
@@ -57,7 +57,9 @@ export function Header() {
           className="text-xl font-bold"
           style={{ color: textColor }}
         >
-          Manish
+          <Link href="/" className="font-display tracking-tight">
+            Manish
+          </Link>
         </motion.div>
 
         <motion.div
@@ -84,9 +86,9 @@ export function Header() {
           ))}
         </motion.div>
 
-        <div className="flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:inline-flex">
-            Resume
+        <div className="flex items-center space-x-3">
+          <Button asChild variant="outline" className="hidden md:inline-flex">
+            <Link href="#contact">Let’s talk</Link>
           </Button>
           <ThemeToggle />
         </div>

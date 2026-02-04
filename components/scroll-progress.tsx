@@ -38,7 +38,7 @@ export function ScrollProgress() {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed top-4 right-4 z-50 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium border"
+        className="fixed top-4 right-4 z-50 hidden md:flex items-center bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium border"
       >
         {scrollPercentage}%
       </motion.div>
